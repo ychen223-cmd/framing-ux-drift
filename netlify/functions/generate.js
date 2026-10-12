@@ -60,10 +60,11 @@ Tiny first step: [the smallest possible action to start right now — one short 
 
 // ── MODEL ─────────────────────────────────────────────────────────────────────
 // Change this one line if you need to swap models.
-// Currently active Groq models (as of April 2026):
-//   llama-3.3-70b-versatile   ← best quality, used here
-//   llama-3.1-8b-instant      ← fastest, lower quality
-const GROQ_MODEL = 'llama-3.3-70b-versatile';
+// Tested on this account in October 2026:
+//   openai/gpt-oss-120b       ← works, used here
+//   llama-3.3-70b-versatile   ← returns 404 (no access), so Drift fell back
+//   llama-3.1-8b-instant      ← also unavailable
+const GROQ_MODEL = 'openai/gpt-oss-120b';
 
 
 // ── CALM FALLBACK ─────────────────────────────────────────────────────────────
